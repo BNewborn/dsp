@@ -45,8 +45,9 @@ Here's a basic list of commands:
 4. $ brings you to end of line, 0 to the beginning of the line
 5. w = start of next word, b = start of previous word
 6. putting number in front of delete characters helps delete en masse
--->#dd (deletes N lines), #x (deletes N characters ahead), #w (deletes N words ahead)
+-->#dd (deletes N lines), #x (deletes N characters ahead), d#w (deletes N words ahead)
 7.yy/p = copy paste
+8. u = undo
 ---
 
 ## Graphical Editor
