@@ -70,5 +70,5 @@ What is your favorite emoji?  (Check out this [emoji cheat sheet](http://www.emo
 
 >> :fire:
 >> :poop:
-
-
+>> :drooling face:
+>> My favorite emoji is the drooling face. It's pretty absurd
