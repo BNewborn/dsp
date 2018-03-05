@@ -76,5 +76,10 @@ _#trying to find all .sh files in /users/brian\_newborn/ and move them to archiv
 _#creates directory_
 <br />
 `find /users/brian\_newborn -maxdepth 1 -name "\*.sh" | xargs -I {} mv {} /users/brian\_newborn/scrpt\_archive`
+
+_## Use XARGS to search all script files in "archive" for "counter" _
+#first, search for script files
+#second, use xargs and grep for counter
+find /users/brian\_newborn/script\_archive -name "\*.sh" | xargs grep "counter"
  
 
