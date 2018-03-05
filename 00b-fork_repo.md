@@ -68,6 +68,8 @@ Here's your first chance to practice this:
 
 What is your favorite emoji?  (Check out this [emoji cheat sheet](http://www.emoji-cheat-sheet.com/).)
 
+<<<<<<< HEAD
 >> :eggplant:
 >> :peach:
-
+>> This is the newest version as of 3/5
+=======

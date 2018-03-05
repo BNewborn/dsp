@@ -34,10 +34,20 @@ Here's a basic list of commands:
 |   |terminal editor | open a file    |  edit a file |  save a file       |  exit a file   |  
 |---|----------------|----------------|--------------|--------------------|----------------|
 | 1 | nano           | nano filen.py  | [just type]  | ctrl + o, enter    | ctrl + x       |
-| 2 | vim, vi        | vim filen.py   | [just type]  | esc :w, enter      | esc :q, enter  |
+| 2 | vim, vi        | vim filen.py   | **hit i first**[just type]  | esc :w, enter      | esc :q, enter  |
 | 3 | emacs          | emacs filen.py | [just type]  | ctrl-x, xtrl-s     | ctrl-x, ctrl-c |
  
-
+>>BN - going to try to use VIM consistently. Internet references seem to suggest it is versatile and can be used in lots of different formats. We'll see! :eggplant:
+>>A few commands I want to list here:
+1. dd = delete line
+2. x = delete char
+3. Arrow keys are good, but can also use k (up), j (down), l (right), h (left)
+4. $ brings you to end of line, 0 to the beginning of the line
+5. w = start of next word, b = start of previous word
+6. putting number in front of delete characters helps delete en masse
+-->#dd (deletes N lines), #x (deletes N characters ahead), d#w (deletes N words ahead)
+7.yy/p = copy paste
+8. u = undo
 ---
 
 ## Graphical Editor
