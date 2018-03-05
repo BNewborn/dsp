@@ -64,8 +64,13 @@ ls -lhGS | color coded, easy size to read, sorted by size
 ### Q4.  Xargs   
 
 What does `xargs` do? Give an example of how to use it.
+`xargs` allows you to string commands together to have argument lists executed with utility (trying to combine definitions from a few websites)
+in terminal, type man xargs to see all documentation
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
+*Example*
+#trying to find all .sh files in /users/brian\_newborn/ and move them to archive folder
+mkdir /users/brian\_newborn/script\_archive
+#creates directory
+find /users/brian\_newborn -maxdepth 1 -name "\*.sh" | xargs -I {} mv {} /users/brian\_newborn/scrpt\_archive
  
 
