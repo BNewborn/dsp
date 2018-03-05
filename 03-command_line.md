@@ -68,11 +68,12 @@ What does `xargs` do? Give an example of how to use it.
 in terminal, type man xargs to see all documentation
 
 *Example*
-#trying to find all .sh files in /users/brian\_newborn/ and move them to archive folder
+<br />
+_#trying to find all .sh files in /users/brian\_newborn/ and move them to archive folder_
 <br />
 `mkdir /users/brian\_newborn/script\_archive`
 <br />
-#creates directory
+_#creates directory_
 <br />
 `find /users/brian\_newborn -maxdepth 1 -name "\*.sh" | xargs -I {} mv {} /users/brian\_newborn/scrpt\_archive`
  
