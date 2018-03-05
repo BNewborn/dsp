@@ -35,15 +35,16 @@ http://www.linfo.org/touch.html
 
 ### Q2.  List Files in Unix   
 https://ss64.com/bash/ls.html
+
 Request | Description
 --------|---------------
-`ls`  |  lists files in input or default directory
-`ls -a`  | lists all files (including hidden)
-`ls -l`  | Use a long listing format (shows permissions, last modified time, owner, name etc.)
-`ls -lh` | h tells bash to print file size in a readable format. Takes -l and makes it easier to use
-`ls -lah`| Includes benefits of -lh but also includes all hidden files
-`ls -t`  | sory by modified time
-`ls -Glp`| G = color codes entries, l= long listing, p=append indicator (/=@) to entries (directories get slash)
+ls  |  lists files in input or default directory
+ls -a  | lists all files (including hidden)
+ls -l  | Use a long listing format (shows permissions, last modified time, owner, name etc.)
+ls -lh | h tells bash to print file size in a readable format. Takes -l and makes it easier to use
+ls -lah| Includes benefits of -lh but also includes all hidden files
+ls -t  | sory by modified time
+ls -Glp| G = color codes entries, l= long listing, p=append indicator (/=@) to entries (directories get slash)
 
 ---
 
@@ -51,7 +52,12 @@ Request | Description
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+Request | Description
+--------|---------------
+ls -m |  lists files as comma separated list
+ls -1  | lists all items as separate line (easier to read)
+ls -GF | Flags file names (gives them a star) G=color codes files vs directories
+ls -lhGS | color coded, easy size to read, sorted by size
 
 ---
 
