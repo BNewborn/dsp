@@ -34,17 +34,16 @@ http://www.linfo.org/touch.html
 ---
 
 ### Q2.  List Files in Unix   
-
-What do the following commands do:  
-`ls`  
-`ls -a`  
-`ls -l`  
-`ls -lh`  
-`ls -lah`  
-`ls -t`  
-`ls -Glp`  
-
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+https://ss64.com/bash/ls.html
+Request | Description
+--------|---------------
+`ls`  |  lists files in input or default directory
+`ls -a`  | lists all files (including hidden)
+`ls -l`  | Use a long listing format (shows permissions, last modified time, owner, name etc.)
+`ls -lh` | h tells bash to print file size in a readable format. Takes -l and makes it easier to use
+`ls -lah`| Includes benefits of -lh but also includes all hidden files
+`ls -t`  | sory by modified time
+`ls -Glp`| G = color codes entries, l= long listing, p=append indicator (/=@) to entries (directories get slash)
 
 ---
 
