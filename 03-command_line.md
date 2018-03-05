@@ -69,11 +69,11 @@ in terminal, type man xargs to see all documentation
 
 *Example*
 #trying to find all .sh files in /users/brian\_newborn/ and move them to archive folder
-\n
-mkdir /users/brian\_newborn/script\_archive
-\n
+<br />
+`mkdir /users/brian\_newborn/script\_archive`
+<br />
 #creates directory
-\n
-find /users/brian\_newborn -maxdepth 1 -name "\*.sh" | xargs -I {} mv {} /users/brian\_newborn/scrpt\_archive
+<br />
+`find /users/brian\_newborn -maxdepth 1 -name "\*.sh" | xargs -I {} mv {} /users/brian\_newborn/scrpt\_archive`
  
 
