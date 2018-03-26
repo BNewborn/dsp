@@ -3,7 +3,7 @@
 Exercise 4   
 Using the variable totalwgt_lb, investigate whether first babies are lighter or heavier than others. Compute Cohen’s d to quantify the difference between the groups. How does it compare to the difference in pregnancy length? 
 
-Compute Cohen’s effect size to quantify the difference between the groups. How does it compare to the difference in pregnancy length?
+# Compute Cohen’s effect size to quantify the difference between the groups. How does it compare to the difference in pregnancy length?
 
 #Mean
 print(firsts.totalwgt_lb.mean())
@@ -23,14 +23,11 @@ print(others.prglngth.mean())
 #From the above summary mean statistics of prglngth and totalwgt, we can say the following takeaways.
 #On the whole, the firsts group (ie first born children) tend to have slightly longer pregnancies (by .08 weeks as a sample average) and slightly smaller weights than their Others counterparts. As we'll illustrate below with our use of Cohen's D, both of these effect sizes seem to be small in magnitude. The below code and explanations will clarify this further.
 
-
-# Solution goes here
-
 #Cohen's D
 
 CohenEffectSize(firsts.totalwgt_lb,others.totalwgt_lb)
 
-# CohenEffectSize(others.totalwgt_lb,firsts.totalwgt_lb)
+#CohenEffectSize(others.totalwgt_lb,firsts.totalwgt_lb)
 
 -0.088672927072602
 
