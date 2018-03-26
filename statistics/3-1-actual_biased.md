@@ -30,7 +30,7 @@ thinkplot.Config(xlabel='Num Kids', ylabel='PMF')
 
 ```
 
-[unbiased image](https://github.com/BNewborn/dsp/blob/master/unbiased_kids.png)
+![unbiased image](https://github.com/BNewborn/dsp/blob/master/unbiased_kids.png)
 
 This is the unbiased num kids distribution - i.e. what the actual mean is (population). pmf_kids is going to just be a PMF of the numkdhh found across the whole dataset. Now, if we were to take a sample of the data and plot it, we'll see below that this would be biased and skew towards higher values versus the population data.
 
@@ -43,7 +43,7 @@ thinkplot.Pmfs([pmf_kids,biased_pmf_kids])
 
 thinkplot.Config(xlabel='Num Kids', ylabel='PMF')
 ```
-[biased image](https://github.com/BNewborn/dsp/blob/master/unbiased_and_biased_kids.png)
+![biased image](https://github.com/BNewborn/dsp/blob/master/unbiased_and_biased_kids.png)
 
 Then, below, we will calculate the means of the num_kids column (named 'numkdhh') for both the biased and unbiased data. We'd expect the biased mean to be higher than the unbiased mean, as per the Class Size Paradox.
 
