@@ -12,6 +12,8 @@ Generate 1000 numbers from numpy.random.random and plot their PMF. What goes wro
 thousand_randos = np.random.random(1000)
 ```
 # Creating the PMF
+![Randos_PMF](https://github.com/BNewborn/dsp/blob/master/randos_pmf.png)
+
 ```
 rando_pmf = thinkstats2.Pmf(thousand_randos, label='randos')
 
@@ -23,6 +25,7 @@ thinkplot.Config(xlabel='random floats 0-1', ylabel='PMF')
 # PMF IMAGE HERE
 
 # Creating the CDF
+![Randos_CDF](https://github.com/BNewborn/dsp/blob/master/randos_cdf.png)
 
 Now plot the CDF. Is the distribution uniform?
 ```
