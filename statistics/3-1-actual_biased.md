@@ -11,6 +11,13 @@ Plot the actual and biased distributions, and compute their means. As a starting
 
 # Answer
 
+The first part of the code does the following
+
+* Creates a resp object with the FemResponse Data
+* Creates a PMF with the numkdhh column within resp - unbiased as it will take the full column's worth of data
+* Then, we plot plot this via thinkplot
+
+```
 resp = nsfg.ReadFemResp()
 
 pmf_kids = thinkstats2.Pmf(resp['numkdhh'], label='numkdhh')
@@ -22,14 +29,11 @@ thinkplot.Pmf(pmf_kids)
 thinkplot.Config(xlabel='Num Kids', ylabel='PMF')
 
 ```
-#This is the unbiased num kids distribution - i.e. what the actual mean is (population)
-#pmf_kids is going to just be a PMF of the numkdhh found across the whole dataset
-#Now, if we were to take a sample of the data and plot it, we'll see below that this would be biased and 
-#skew towards higher values versus the population data
+# Place unbiased image here
 
-#The pyplot graph is a local image on my jupyter notebook
+This is the unbiased num kids distribution - i.e. what the actual mean is (population). pmf_kids is going to just be a PMF of the numkdhh found across the whole dataset. Now, if we were to take a sample of the data and plot it, we'll see below that this would be biased and skew towards higher values versus the population data.
+
 ```
-
 biased_pmf_kids = BiasPmf(pmf_kids, label='bias Num Kids')
 
 thinkplot.PrePlot(2)
@@ -37,18 +41,22 @@ thinkplot.PrePlot(2)
 thinkplot.Pmfs([pmf_kids,biased_pmf_kids])
 
 thinkplot.Config(xlabel='Num Kids', ylabel='PMF')
+```
+# Place biased image here
 
+Then, below, we will calculate the means of the num_kids column (named 'numkdhh') for both the biased and unbiased data. We'd expect the biased mean to be higher than the unbiased mean, as per the Class Size Paradox.
 
+```
 num_kids = resp['numkdhh']
-
 population_mean_numkdhh = num_kids.mean()
 biased_mean_numkdhh = biased_pmf_kids.Mean()
 
 print('Full population mean for NUMKDHH:',population_mean_numkdhh)
 print('Biased sample mean for NUMKDHH:',biased_mean_numkdhh)
-# #################
-Full population mean for NUMKDHH: 1.024205155043831
-Biased sample mean for NUMKDHH: 2.403679100664282
+```
+
+# Full population mean for NUMKDHH: 1.024205155043831
+# Biased sample mean for NUMKDHH: 2.403679100664282
 
 The difference in means is 2.40 - 1.02 = apx 1.38 (children per household)
 
