@@ -54,10 +54,10 @@ biased_mean_numkdhh = biased_pmf_kids.Mean()
 
 print('Full population mean for NUMKDHH:',population_mean_numkdhh)
 print('Biased sample mean for NUMKDHH:',biased_mean_numkdhh)
-```
+
 
  Full population mean for NUMKDHH: 1.024205155043831
  Biased sample mean for NUMKDHH: 2.403679100664282
-
+```
 The difference in means is 2.40 - 1.02 = apx 1.38 (children per household)
 
