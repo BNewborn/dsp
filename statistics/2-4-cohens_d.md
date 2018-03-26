@@ -16,7 +16,9 @@ print(others.totalwgt_lb.mean())
 
 print(firsts.prglngth.mean())
 print(others.prglngth.mean())
+
 #The difference in mean of the 2 groups' prglngth is apx. 0.08 lbs (with firsts having a slightly longer pregnancy, on average, than others)
+
 38.60095173351461
 38.52291446673706
 
