@@ -21,14 +21,14 @@ thinkplot.Pmf(pmf_kids)
 
 thinkplot.Config(xlabel='Num Kids', ylabel='PMF')
 
-''''
+```
 #This is the unbiased num kids distribution - i.e. what the actual mean is (population)
 #pmf_kids is going to just be a PMF of the numkdhh found across the whole dataset
 #Now, if we were to take a sample of the data and plot it, we'll see below that this would be biased and 
 #skew towards higher values versus the population data
 
 #The pyplot graph is a local image on my jupyter notebook
-''''
+```
 
 biased_pmf_kids = BiasPmf(pmf_kids, label='bias Num Kids')
 
