@@ -21,6 +21,8 @@ thinkplot.Config(xlabel='random floats 0-1', ylabel='PMF')
 ```
 ![Randos_PMF](https://github.com/BNewborn/dsp/blob/master/randos_pmf.png)
 
+The PMF is essentially useless here - we cannot tell what numbers are getting chosen and what numbers aren't. This is because each random number chosen by np.random.random is going to be an extremely long decimal; the odds of getting 2 identical numbers are close to 0. So, each separate value is technically being recorded as a distinct outcome, when we'd probably (for illustrative purposes) be better off grouping numbers rounded to the nearest hundredth (or something similar). 
+
 # Creating the CDF
 
 
@@ -35,3 +37,6 @@ thinkplot.Config(xlabel='random floats 0-1', ylabel='CDF')
 ```
 
 ![Randos_CDF](https://github.com/BNewborn/dsp/blob/master/randos_cdf.png)
+
+The CDF is a much better represntation of this dataset, as you can see a close-to-smooth line from the bottom left to the top right of the graph. This is telling us that the distribution is quite close to uniform, as the probability of getting a slightly higher number increases almost at a 1-1 relationship with the increase in np.random.random
+
