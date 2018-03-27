@@ -69,4 +69,4 @@ For a N(178,7.7) distribution, there is a 48.96% chance of a value falling *belo
 ```
 print('The P(177.8 < x < 185.42) is equal to:', round(high_p-low_p,4))
 ```
-The P(177.8 < x < 185.42) is equal to: 0.3427
+The P(177.8 < x < 185.42) is equal to: 0.3427. So, 34.27% of US men fall within Blue Man Group's accepted range for trying out.
