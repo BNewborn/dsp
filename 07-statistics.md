@@ -86,7 +86,8 @@ Bayes' Theorem is an important tool in understanding what we really know, given 
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
 
-# Answer below 
+**Answer below**
+
 Before we begin with any calculations, we'll want to set up our numbers that will be entered into Bayes' formula. First, we'll define the three random variables that need calculating. Note that since the question tells us that Elvis had a *twin brother*, this is relevant information.
 
 T = P(Twin Brothers)
@@ -113,16 +114,16 @@ P(Identical | Twin Boys )= P(Twin Boys and Identical) / P(Twin Boys)
                          
 The chance that, given that Elvis had a twin brother die at birth, Elvis was an identical twin is 5/11. Had you been asked this question before knowing that Elvis had a twin brother die at birth, you'd likely estimate this probability to be substantially lower. However, once we were given this piece of information, we used Bayes' Theorem to update our probabilities and come up with 5/11
 
-
-
-
-
 ---
 
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Frequentist and Bayesian statistics are similar, but have distinct aspects by which they differentiate.
+
+Frequentists try to avoid defining probabilities to events that are unknown - they think of probability as the frequency of a certain event done repeatedly over a large number of events. For example, rolling a 1 on a fair die is 1/6 because we can reasonably expect 1/6 of rolls for an infinite number to be 1. Frequentist Statistics will attempt to use a model (like a normal distribution) to depict probabilities. To then predict population from samples, one can utilize confidence intervals or Null Hypothesis tests (getting p values and then making decisions based on that).
+
+Bayesian statistics tries to constantly predict probabilities for all events, even those that are unknown and not predictable (like an upcoming election - no two elections will ever be the same, so each is guaranteed to be unique). Bayesian statistics will take all available information and try to come up with an updated probability every time new information is available. Going back to the election example, the odds of candidate 1 winning with 50 days to go are unknown. However, if candidate 1 eventually wins the election, that probability becomes 1. Bayesian statistics is interested in tracking that probability as it goes to either 1 or 0 (either they win or lose). 
 
 ---
 
