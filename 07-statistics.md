@@ -125,6 +125,8 @@ Frequentists try to avoid defining probabilities to events that are unknown - th
 
 Bayesian statistics tries to constantly predict probabilities for all events, even those that are unknown and not predictable (like an upcoming election - no two elections will ever be the same, so each is guaranteed to be unique). Bayesian statistics will take all available information and try to come up with an updated probability every time new information is available. Going back to the election example, the odds of candidate 1 winning with 50 days to go are unknown. However, if candidate 1 eventually wins the election, that probability becomes 1. Bayesian statistics is interested in tracking that probability as it goes to either 1 or 0 (either they win or lose). 
 
+Another example for Bayesian statistics is utilizing Bayes' Theorem. This helps us calculate probabilities of A given B, if we know circumstantial data about A and B (and A complement and B complement). A common example used for this is about medical tests - i.e. if you test positive for XYZ disease, what is the actual likelihood you are sick? Frequentist statistics wouldn't be bothered with the surrounding data, it is just looking for the rate you are sick according to a long-term repeated instance of this disease test occuring.
+
 ---
 
 ## <a name="section-e"></a>5.  Optional Exercises
