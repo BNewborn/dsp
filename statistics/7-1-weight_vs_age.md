@@ -12,7 +12,7 @@ y_weight = live.totalwgt_lb
 thinkplot.Scatter(x_age,y_weight,alpha=0.15,s=10)
 thinkplot.Config(xlabel="Age of Mother (Yrs)", ylabel="Baby Weight (lbs)",axis=[13,40,2,13])
 ```
-*Scatter Plot Picture
+![ScatterPlot](https://github.com/BNewborn/dsp/blob/master/babyweight_mothersage.png)
 
 ```
 SpearmanCorr(x_age,y_weight) #Spearman uses rank - handles outliers better
